@@ -1,0 +1,60 @@
+/* UpdatePost.css */
+.UpdatePost {
+    max-width: 600px;
+    margin: 80px auto; /* Adjusted for navbar */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .UpdatePost h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .UpdatePost form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .UpdatePost label {
+    margin-bottom: 8px;
+  }
+  
+  .UpdatePost input[type="text"],
+  .UpdatePost textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px;
+  }
+  
+  .UpdatePost button {
+    background-color: #4caf50; /* Green background for buttons */
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px; /* Add space between the button and the inputs */
+  }
+  
+  .UpdatePost button:hover {
+    background-color: #45a049;
+  }
+  
+  .UpdatePost button[type="submit"] {
+    margin-right: 10px;
+  }
+  
+  .UpdatePost .cancel-button {
+    background-color: #f44336; /* Red background for cancel button */
+  }
+  
+  .UpdatePost .cancel-button:hover {
+    background-color: #d32f2f;
+  }
+  

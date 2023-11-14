@@ -1,0 +1,52 @@
+/* App.css */
+/* body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add this style to ensure the NavBar is at the top */
+/* .NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Adjust as needed to ensure the NavBar is above other elements 
+} */
+
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* A clean, modern, and web-friendly font */
+  background-color: #f4f4f4; /* Light gray background for less strain on the eyes */
+  color: #333; /* Dark gray text for contrast and readability */
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure NavBar stays on top */
+  background-color: #1a1a1a; /* Dark background for the NavBar */
+  color: white;
+}
+
+.card {
+  padding: 2em;
+  background-color: #fff; /* White cards for posts or content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.read-the-docs {
+  color: #888; /* Grey for less important text */
+}
+
+/* Additional global styles as needed */

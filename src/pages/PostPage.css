@@ -1,0 +1,52 @@
+/* PostPage.css */
+.PostPage {
+    max-width: 800px;
+    margin: 80px auto; /* Give some top space due to the fixed NavBar */
+    padding: 1rem;
+  }
+  
+  .post-details {
+    background-color: #fff; /* Bright background for the post content */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .post-title {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .post-time {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .post-content {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .post-upvotes {
+
+    color: #333;
+  }
+  
+  .post-interactions {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between buttons and upvote count */
+  }
+  
+  .upvotes {
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Add styles for buttons */
+  
+  /* Add styles for comments section */
+  

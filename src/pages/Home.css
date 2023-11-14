@@ -1,0 +1,81 @@
+/* Home.css */
+.Home {
+    max-width: 800px;
+    margin: 80px auto; /* Adjusted top margin for fixed NavBar */
+    padding-bottom: 2rem;
+   }
+  
+  .order-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the order section if needed */
+    margin-bottom: 40px; /* Increased distance from the posts */
+  }
+  
+  .order-section span {
+    margin-right: 10px;
+    color: var(--color-text-light); /* Using the CSS variable for lighter text color */
+  }
+  
+  .order-section button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--color-button); /* Using CSS variable for button color */
+    color: var(--color-button-text); /* Using CSS variable for button text color */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  .order-section button.active {
+    font-weight: bold;
+    background-color: var(--color-button-active); /* Using CSS variable for active button color */
+  }
+  
+  .post-container {
+    background-color: var(--color-card-background); /* Using CSS variable for post container background */
+    color: var(--color-text); /* Using CSS variable for text color */
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 20px; /* Space before the first post */
+    margin-bottom: 1rem; /* Space between posts */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .post-container:hover {
+    background-color: #3a3a3a; /* Slightly lighter on hover for interactive feedback */
+  }
+  
+  .post-container .time,
+  .post-container .upvotes {
+    font-size: 0.9em;
+    color: var(--color-text-light); /* Lighter color for meta information */
+  }
+  
+  .post-container .title {
+    margin: 0.5rem 0;
+    color: var(--color-text); /* Text color for titles */
+    font-weight: bold;
+  }
+  
+  /* Additional styles and responsive adjustments as needed */
+  @media (max-width: 768px) {
+    .Home {
+      margin: 60px auto; /* Smaller top margin for mobile */
+    }
+  
+    .post-container {
+      padding: 0.8rem;
+    }
+  
+    .post-container .time,
+    .post-container .upvotes {
+      font-size: 0.8em;
+    }
+  
+    .post-container .title {
+      font-size: 1.2em; /* Larger font size for titles on mobile for readability */
+    }
+  }
+  
