@@ -64,15 +64,36 @@ function PostPage() {
     if (!newComment.trim()) return;
   
     const newCommentData = { post_id: id, content: newComment };
-    const { data, error } = await supabase.from('comments').insert([newCommentData]);
+    const { error } = await supabase.from('comments').insert([newCommentData]);
   
     if (error) {
       console.error('Error adding comment:', error.message);
-    } else if (data && data.length > 0) {
-      setComments([...comments, ...data]);
-      setNewComment(''); // Reset input field after submission
+    } else {
+      // Clear the newComment input
+      setNewComment('');
     }
   };
+  
+  // Use useEffect to fetch comments after a new comment is submitted
+  useEffect(() => {
+    const fetchComments = async () => {
+      try {
+        const { data, error } = await supabase.from('comments').select('*').eq('post_id', id);
+  
+        if (error) {
+          console.error('Error fetching comments:', error.message);
+        } else {
+          // Update the local state with the latest comments
+          setComments(data || []);
+        }
+      } catch (error) {
+        console.error('Error fetching comments:', error.message);
+      }
+    };
+  
+    fetchComments();
+  }, [id, newComment]); // Trigger the effect whenever a new comment is added
+
 
   return (
     <div className="PostPage">
